@@ -1,45 +1,73 @@
-#🏠 Hostel Management System (C Project)#
+🏠 Hostel Management System
 
-A simple and efficient Hostel Management System built in C language to handle student records, room allocation, invoices, and hostel information — all through a user-friendly console interface.
+A simple C project for managing hostel operations like student registration, room allocation, and fee invoice generation.
+It demonstrates structures, file handling, modular programming, and menu-driven logic in C.
 
-🔹 Features
+📁 Project Files
 
-👩‍🎓 Student Registration — Add and manage student details with auto-generated Student IDs.
+main.c – Controls the main menu and program flow
 
-🏢 Room Allocation — Assign rooms to students across multiple hostels dynamically.
+student.c / student.h – Handles student registration, room allocation, viewing, and searching
 
-📊 Hostel Info View — Displays total, available, and occupied rooms per hostel.
+hostel.c / hostel.h – Manages hostel details, available and occupied rooms
 
-🧾 Invoice Generation — Automatically calculates total fees with tax for each student.
+invoice.c / invoice.h – Generates invoices for students
 
-🗑️ Remove Student — Deallocate rooms and update records when students leave.
+menu.c / menu.h – Displays the weekly food menu
 
-🍛 Weekly Food Menu — Displays the hostel’s weekly meal plan.
+utils.c / utils.h – Handles saving and loading student data using file operations
 
-🔍 Search by Hostel — Quickly view all students residing in a particular hostel.
+⚙️ Features
 
-💾 Data Persistence — All data is saved to and loaded from a binary file (data.txt).
+Register new students with auto-generated IDs
 
-⚙️ Tech Stack
+Allocate or remove rooms
 
-Language: C
+Track hostel occupancy (available and occupied rooms)
 
-File Handling: Binary I/O for data storage
+Generate invoices with tax calculation
 
-Modules: main.c, student.c, hostel.c, invoice.c, utils.c
+View all registered students
 
-Headers: student.h, utils.h
+Search students by hostel
 
-🧠 Learning Outcomes
+Display weekly food menu
 
-Modular programming in C
+Save and load records from file
 
-File handling (read/write in binary)
+🧠 Concepts Used
 
-Struct-based data management
+Structures
 
-Command-line UI design
+File handling (fwrite, fread)
 
-🚀 How to Run -->
-gcc main.c student.c hostel.c invoice.c utils.c -o hostel_mgmt
+Functions and pointers
+
+Modular programming
+
+Conditional logic
+
+Menu-driven approach
+
+🖥️ How to Run
+
+Compile the program:
+
+gcc main.c student.c hostel.c invoice.c menu.c utils.c -o hostel_mgmt
+
+
+Run the executable:
+
 ./hostel_mgmt
+
+💡 Example Output
+===== HOSTEL MANAGEMENT SYSTEM =====
+1. Register Student
+2. Allocate Room
+3. View Hostel Info
+4. View All Students
+5. Generate Invoice
+6. Remove Student
+7. View Food Menu
+8. Search Students by Hostel
+9. Exit
