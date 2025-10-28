@@ -40,6 +40,6 @@ Struct-based data management
 
 Command-line UI design
 
-🚀 How to Run
+🚀 How to Run -->
 gcc main.c student.c hostel.c invoice.c utils.c -o hostel_mgmt
 ./hostel_mgmt
